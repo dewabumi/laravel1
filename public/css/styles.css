@@ -1,0 +1,35 @@
+a.custom-card,
+a.custom-card:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.custom-card:hover .card {
+    filter: blur(3px);
+    opacity: 0.5;
+    transform: scale(0.98);
+    box-shadow: none;
+    color: tomato;
+}
+
+.card {
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.125);
+    transition: 0.2s all;
+}
+
+.custom-card:hover .card:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+.bgs {
+    background-image: url(/vendor/GO/img/background6.png);
+    background-size: cover;
+    margin-top: 170px;
+}
+
+footer {
+    margin-top: 50px;
+}
