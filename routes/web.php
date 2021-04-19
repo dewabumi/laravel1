@@ -29,8 +29,8 @@ Route::get('hasil-pencarian/{slug}', 'DaftarController@methodBaru');
 Route::post('/daftar/store', 'DaftarController@storeDaftar');
 
 
-Route::get('daftar', 'DaftarCont@index')->name('daftar');
-Route::get('hasil-pencarian', 'DaftarCont@show')->name('daftar.show');
+Route::get('cari', 'DaftarCont@index')->name('daftar');
+Route::get('daftar', 'DaftarCont@show')->name('daftar.show');
 
 
 // dropdowns
