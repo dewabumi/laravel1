@@ -94,7 +94,6 @@ class DaftarController extends Controller
 
         $passId = ProgramModel::where('id', $data)
             ->firstOrFail();
-            dd($passId);
         return view('form', [
             'passId'    => $passId,
             'kota'      => $kota,

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Concerns\HasAttributes;
 use Illuminate\Database\Eloquent\Model;
 
 class ProgramModel extends Model
@@ -10,7 +11,7 @@ class ProgramModel extends Model
 
     public function outlet()
     {
-        return $this->belongsTo('App\OutletModel');
+        return $this->belongsTo('App\OutletModel', 'outlet');
     }
 
     public function jadwal()

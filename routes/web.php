@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DaftarController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,10 +23,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/daftar', 'DaftarController@index')->name('daftar');
+// Route::get('/daftar', 'DaftarController@index')->name('daftar');
 Route::get('/daftar/form/{id}', 'DaftarController@daftarIni');
 Route::get('hasil-pencarian/{slug}', 'DaftarController@methodBaru');
 Route::post('/daftar/store', 'DaftarController@storeDaftar');
+
+
+Route::get('daftar', 'DaftarCont@index')->name('daftar');
+Route::get('hasil-pencarian', 'DaftarCont@show')->name('daftar.show');
+
 
 // dropdowns
 Route::post('/daftar/getOutlet/{id}', 'DaftarController@outlet');

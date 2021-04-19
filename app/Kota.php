@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kota extends Model
 {
-    protected $tabel = 'regencies';
+    protected $table = 'kota';
 
     public function jadwal()
     {
