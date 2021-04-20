@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('judul_header', 'Pilih Program Belajarmu di '.$outlet->outlet_name)
+@section('judul_header_2', 'Untuk Program '.$jadwal)
 @section('konten')
 <div class="container">
     <div class="row mx-auto">

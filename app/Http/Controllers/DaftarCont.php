@@ -26,6 +26,6 @@ class DaftarCont extends Controller
             ->whereHas('outlet', function (Builder $q) use ($outlet_id) {
                 $q->where('id', $outlet_id);
             })->orderBy('harga_program', 'ASC')->get();
-        return view('hasil-pencarian', compact(['program', 'outlet']));
+        return view('hasil-pencarian', compact(['program', 'outlet', 'jadwal']));
     }
 }
